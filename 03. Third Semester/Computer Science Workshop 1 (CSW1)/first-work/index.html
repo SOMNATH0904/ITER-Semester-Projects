@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Noto+Sans:wght@100&display=swap" rel="stylesheet">
+		<link rel="icon" href="assets/Hotel.jpeg"></link>
+		<title>Take it Cheesy</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				font-family: sans-serif;
+			}
+			
+			.nav ul {
+				list-style-type: none;
+				overflow: hidden;
+				background-color: black;
+			}
+			
+			.name h1 {
+				background-image: linear-gradient(to right, rgba(175,0,0,0), rgba(175,0,0,1));
+			}
+			
+			li {
+				float: left;
+			}
+			
+			li a {
+				display: flex;
+				color: white;
+				padding: 8px 130px;
+			}
+			
+			.main p {
+				color: black;
+				text-decoration: none;
+			}
+			
+			.section {
+				height: 500px;
+				width: 100%;
+				position: absolute;
+				left: 0px;
+  				top: 0px;
+  				z-index: -1;
+  			}	
+  			
+  			.cards-container{
+  				display: flex;	  			
+  			}	
+  			
+  			.card .card-img {
+  	  			width: 100%;
+    			border-radius: 0.5rem;
+			}
+			
+			.card {
+    			background-color: #232323;
+    			height: 150px;
+   				width: 150px;
+    			border-radius: 10px;
+    			padding: 15px;
+    			opacity: 0.9;
+    			margin-left: 19px;
+    			margin-top: 16px;
+			}
+			
+			.card-img {
+  	  			width: 100%;
+    			border-radius: 8px;
+			}
+			
+			.offers strong a {
+				display: block;
+				font-weight: 700px;
+				font-family: Serif;
+				text-align: center;
+				text-decoration: none;
+				color: yellow;
+				font-size:25px;
+			}
+			
+			.last {
+				font-weight: 500px;
+				font-size: 20px;		
+			}
+	
+			.maps {
+				height: 250px;
+				width: 400px;
+				display: flex;
+				padding-left: 850px;
+				margin-right: 200px;
+				margin-bottom: 200px;
+			}
+
+			.card .card-title a {
+				text-decoration: none;
+				color: white;
+			}
+
+			.card:hover {
+				opacity: 1;
+				border: 1px solid yellow;
+			}
+
+			.card .card-title {
+				font-size: 20px;
+
+			}
+
+			.card .card-title a:hover {
+				color: cadetblue;
+			}
+
+			.contact-us {
+				height: 400px;
+				width: 300px;
+				border: 2px solid black;
+				padding: 10px;
+				margin: 30px;
+			}
+
+			.contact-us h1 {
+				text-align: center;
+				text-decoration: underline;
+				color: darkcyan;
+			}
+
+			input[type="text"], textarea, select {
+				box-sizing: border-box;
+				border: 2px solid crimson;
+				padding: 5px;
+				margin: 10px;
+			}
+
+			input[type="submit"] {
+				box-sizing: border-box;
+				border: 2px solid black;
+				background-color: darkcyan;
+				color: black;
+				padding: 15px;
+				margin: 15px;
+				width: 50%;
+				cursor: pointer;
+			}
+
+			input[type="submit"]:hover {
+				background-color: blueviolet;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="name">
+			<h1 style="text-align: center;">Take it Cheesy</h1>
+			<div class="nav">
+				<ul>
+					<li><a class="active" href="#Home">Home</a></li>
+					<li><a href="#Services">Services</a></li>
+					<li><a href="#About">About</a></li>
+					<li><a href="#Contact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="main">
+			<img src="assets/Hotel1.jpg" class="section" style="height: 350px; width: 100%;">
+			<h3 style="text-align: center; margin: 15px;"><i>Items Available</i></h3>
+			<div class="menu">
+				<div class="cards-container">
+                    <div class="card">
+                        <img src="assets/pizza.jpeg" class="card-img">
+                        <p class="card-title" style="color: white"><a href="pages/pizza.html" target="_blank">Delicious Pizza</a></p>
+                        <p class="card-info"></p>
+                    </div> 
+                    <div class="card">
+                        <img src="assets/burger.jpeg" class="card-img">
+                        <p class="card-title" style="color: white"><a href="pages/burger.html" target="_blank">Burger King</a></p>
+                        <p class="card-info" style="color: white"></p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/chowmein.jpeg" class="card-img">
+                        <p class="card-title" style="color: white"><a href="pages/chowmein.html" target="_blank">Chowmein</a></p>
+                        <p class="card-info" style="color: white"></p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/roll.jpg" class="card-img">
+                        <p class="card-title" style="color: white"><a href="pages/roll.html" target="_blank">Veg/NonVeg Rolls</a></p>
+                        <p class="card-info" style="color: white"></p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/meal1.jpeg" class="card-img">
+                        <p class="card-title" style="color: white"><a href="pages/meal1.html" target="_blank">Meal 1</a></p>
+                        <p class="card-info" style="color: white"></p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/meal2.jpeg" class="card-img">
+                        <p class="card-title" style="color: white"><a href="pages/meal2.html" target="_blank">Meal 2</a></p>
+                        <p class="card-info" style="color: white"></p>
+                    </div>
+                    <div class="card">
+                        <img src="assets/meal3.jpeg" class="card-img">
+                        <p class="card-title" style="color: white"><a href="pages/meal3.html" target="_blank">Meal 3</a></p>
+                        <p class="card-info" style="color: white"></p>
+                    </div>
+            	</div>
+			</div>
+		</div>
+		
+		<div class="offers">
+			<strong><a href="#Offers">Click here for Exciting Offers!</a></strong>
+		</div>
+		
+		<div class="contact-us">
+			<h1>Write to Us</h1>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" placeholder="Enter your name..."> <br>
+
+				<label for="email">Email:</label>
+				<input type="text" id="email" name="email" placeholder="Enter your email..."> <br>
+
+				<label for="subject">Subject:</label>
+				<select id="subject" name="subject">
+					<option value="general">General Inquiry</option>
+					<option value="support">Customer Support</option>
+					<option value="feedback">Feedback</option>
+				</select> <br>
+				
+				<label for="decr">Description:</label>
+				<textarea name="decription" id="decr" placeholder="Enter decription of inquiry..."></textarea> <br>
+
+				<input type="submit" value="Submit">
+			</form>
+			<img src="assets/maps.jpeg" class="maps">
+		</div>
+		
+		<div class="last">
+			<address>
+				<b><u>Addrss:</u></b>
+				Take it Cheesy<br> Saheed Nagar<br> Bhubaneswar<br> Odisha, 7510008
+			</address>
+		</div>
+	</body>
+</html>
